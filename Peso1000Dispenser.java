@@ -13,7 +13,7 @@ public class Peso1000Dispenser implements DispenseChain {
         if (cur.getAmount() >= 1000) {
             int num = cur.getAmount() / 1000;
             int remainder = cur.getAmount() % 1000; //800
-            System.out.println("Dispensing " + num + " 1000 bills");
+            System.out.println("Dispensing " + num + " - 1000 bills");
             if (remainder != 0) {
                 this.chain.dispense(new Currency(remainder));
             }

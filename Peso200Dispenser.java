@@ -13,7 +13,7 @@ public class Peso200Dispenser implements DispenseChain {
         if (cur.getAmount() >= 200) {
             int num = cur.getAmount() / 200;
             int remainder = cur.getAmount() % 200;
-            System.out.println("Dispensing " + num + " 200 bills");
+            System.out.println("Dispensing " + num + " - 200 bills");
             if (remainder != 0) {
                 this.chain.dispense(new Currency(remainder));
             }
